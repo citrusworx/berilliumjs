@@ -23,7 +23,7 @@ window.include = (url) => {
    xhr.open('GET', url);
 
    xhr.onload = () => {
-       if (xhr.status >= 200 && xhr.status < 300) {
+       if (xhr.status >= 200 && xhr.status < 300 && new URL(url).origin === window.location.origin) {
            try {
                const scriptText = xhr.responseText;
                const script = document.createElement('script');
@@ -35,6 +35,7 @@ window.include = (url) => {
            }
        } else {
            console.error(`Error loading script from ${url}: Status ${xhr.status}`);
+           console.log(`Including libraries from ${url} is forbidden. Use local scripts only.`);
        }
    };
 
