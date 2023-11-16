@@ -105,4 +105,4 @@ Router.js is our MVC library.
 
 ### Spa.js 🕸️
 
-Spa.js is our single page application library. Built on the back of XHR, we can utilize the Browser API and Redux to create a scalable, manageable application.
+Spa.js is our single page application library. Built on the back of XHR, we can utilize the Browser API and berilliumStateMate. `stateMate` is our answer for Vanillajs global state management.

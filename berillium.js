@@ -18,32 +18,38 @@ window.goget = async function(url, module){
    
 };
 
-window.include = (url) => {
-   const xhr = new XMLHttpRequest();
-   xhr.open('GET', url);
+const include = (url) => {
+   return new Promise((resolve, reject) => {
+       const xhr = new XMLHttpRequest();
+       xhr.open('GET', url);
 
-   xhr.onload = () => {
-       if (xhr.status >= 200 && xhr.status < 300 && new URL(url).origin === window.location.origin) {
-           try {
-               const scriptText = xhr.responseText;
-               const script = document.createElement('script');
-               script.textContent = scriptText;
-               document.body.append(script);
-               console.log(`Script loaded from ${url}`);
-           } catch (e) {
-               console.error(`Error executing script from ${url}: ${e.message}`);
+       xhr.onload = () => {
+           if (xhr.status >= 200 && xhr.status < 300 && new URL(url).origin === window.location.origin) {
+               try {
+                   const scriptText = xhr.responseText;
+                   const script = document.createElement('script');
+                   script.textContent = scriptText;
+                   document.body.append(script);
+                   console.log(`Script loaded from ${url}`);
+                   resolve(); // Resolve the promise when the script is successfully loaded
+               } catch (e) {
+                   console.error(`Error executing script from ${url}: ${e.message}`);
+                   reject(e); // Reject the promise if there's an error
+               }
+           } else {
+               console.error(`Error loading script from ${url}: Status ${xhr.status}`);
+               console.log(`Including libraries from ${url} is forbidden. Use local scripts only.`);
+               reject(`Error loading script from ${url}: Status ${xhr.status}`);
            }
-       } else {
-           console.error(`Error loading script from ${url}: Status ${xhr.status}`);
-           console.log(`Including libraries from ${url} is forbidden. Use local scripts only.`);
-       }
-   };
+       };
 
-   xhr.onerror = () => {
-       console.error(`Network error while loading script from ${url}`);
-   };
+       xhr.onerror = () => {
+           console.error(`Network error while loading script from ${url}`);
+           reject(`Network error while loading script from ${url}`);
+       };
 
-   xhr.send();
+       xhr.send();
+   });
 };
 
 
@@ -75,3 +81,7 @@ window.callAPI = async function(url){
       console.error(`Error fetching API data from ${url}: `, error);
    }
 }
+
+include('http://127.0.0.1:5500/global/global.js').then(() => {
+   console.log(window.state.isClicked = true);
+})
