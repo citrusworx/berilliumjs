@@ -7,24 +7,19 @@
  * @returns {boolean} - The result of the function.
  */
 
-define('setState', 'state', function setState(stateProp, valueProp,  value){
-        window[stateProp] = {
-    [valueProp]: value
-        }
-});
 
-define('getState', 'state', function getState(prop){
-    return window.state[prop]
-});
+const define = (name, moduleName, content) => {
 
-define('createState', 'state', function createState(state_attr, state_value){
-        window.state = {
-            ...window.state, 
-            [state_attr]: state_value
-        }
-})
+    global[moduleName] = {
+       [name]: content
+    }
+ 
+ }
 
 // | All other code goes below here   | 
 // | Happy coding!                    |
 // v                                  v
-    
+
+
+// export here :D
+module.exports = {define}

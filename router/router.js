@@ -1,13 +1,10 @@
-// Define the XHR Router
-// vanillajs only
 class Router {
-    constructor(){
-
+    constructor() {
+        console.log('Router has been intialized...')
     }
-    static xhr = new XMLHttpRequest();
 
-    static routes =  {
-        home: '/',
+    static routes = {
+        home: '/'
         // Add more routes here
     }
 
@@ -15,48 +12,52 @@ class Router {
 
     }
 
-    route(url){
-        this.xhr.open('GET', url);
-        this.xhr.onload= () => {
-        if(this.xhr.status >= 200 && this.xhr.status < 300){
-        // Define Success 200 
-            
-        }
-        else if(this.xhr.status >= 300 && this.xhr.status < 300){
-        // Define Redirect 300
-            console.log(xhr.statusText);
-            const error = new Error('Page has been moved');
-            throw error;
-    }
-        else if(this.xhr.status >= 400 && this.xhr.status < 500){
-        // Define Not Found 404
-            console.log(xhr.statusText);
-            const error = new Error("Page not found");
-            throw error;
-    }
-        else if(this.xhr.status >= 500 && this.xhr.status < 600){
-        // Define Internal Server Error 501/502/503
-            console.log(xhr.statusText);
-            const error = new Error('Internal Server Error: ');
-            throw error;
-            
+    async route(url){
+        try {
+            const res = await fetch(url);
+            if(res.ok){
+                const data = await res.text();
             }
-        else{
-            return 'Unknown server error';
+            else {
+                throw new Error(`${res.status}: ${res.statusText}`);
             }
         }
-    }
-
-    static addController(name, control){
-       this.controller[name] = control; 
-    }
-
-   static addRoute(name, path){
-        this.routes = {
-            ...this.routes,
-            [name]: path
+        catch(error){
+            throw new Error('Error in setting up route: ', error);
         }
+
+    }
+
+    static init(){
+        window.addEventListener('popstate', (event) => {
+            this.route(event.state.path);
+        });
+
+        document.addEventListener('click', (event) => {
+            if(event.target.matches('[data-loader]')) {
+                event.preventDefault();
+                let path = event.target.getAttribute('href');
+                Router.navigate(path);
+            }
+        })
+    }
+
+    static navigate(path){
+        history.pushState({ path }, '', path);
+        this.route(path);
+    }
+
+    static addRoute(){
+
+    }
+
+    static addController(){
+
+    }
+
+    viewRoutes(){
+        return Router.routes;
     }
 }
 
-define('Router', 'modules', Router);
+module.exports = Router;
