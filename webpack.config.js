@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/berillium.js',
+    entry: './berillium.js',
     output: {
-        filename: 'berillium.js',
+        filename: './js/berillium.js',
         path: path.resolve(__dirname, 'main'),
         libraryTarget: 'umd',
         library: 'berillium'
@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
