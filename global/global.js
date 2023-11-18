@@ -19,6 +19,7 @@ define('getState', 'state', function getState(prop){
 
 define('createState', 'state', function createState(state_attr, state_value){
         window.state = {
+            ...window.state, 
             [state_attr]: state_value
         }
 })

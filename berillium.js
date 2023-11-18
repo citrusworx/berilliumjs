@@ -1,4 +1,4 @@
-window.myModules = {};
+window.modules = {};
 window.state = {};
 
 window.goget = async function(url, module){
@@ -10,7 +10,7 @@ window.goget = async function(url, module){
       const exports = {};
       createModule(exports);
 
-      window.myModules[module] = exports;
+      window.modules[module] = exports;
    } 
    catch(error){
       console.error(`Error including file from ${url}: `, error);
@@ -84,4 +84,11 @@ window.callAPI = async function(url){
 
 include('http://127.0.0.1:5500/global/global.js').then(() => {
    console.log(window.state.isClicked = true);
+})
+
+include('http://127.0.0.1:5500/router/router.js').then(() => {
+   const router = window.modules.Router.content;
+   router.addRoute('about', '/about');
+   console.log(router);
+
 })
