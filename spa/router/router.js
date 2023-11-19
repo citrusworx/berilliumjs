@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import HomeController from '../controllers/home-controller';
+
 export class Router {
     constructor() {
         console.log('Router has been intialized...')
@@ -22,8 +23,11 @@ export class Router {
             if (controller) {
                 const container = document.getElementById('app');
                 if (!container) throw new Error('Root container not found');
-                const root = createRoot(container);
-                root.render(React.createElement(controller));
+
+                if(!Router.root){
+                    Router.root = createRoot(container)
+                }
+                Router.root.render(React.createElement(controller));
             } else {
                 throw new Error('Route not found');
             }
