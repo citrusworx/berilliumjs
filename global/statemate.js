@@ -16,12 +16,10 @@ const createState = (state_attr, state_value) => {
     return globalThis['state'][prop];
   };
   
-  const isClicked = false;
-  
+
   module.exports = {
     createState,
     setState,
     getState,
-    isClicked,
   };
   

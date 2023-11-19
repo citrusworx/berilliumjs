@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './berillium.js',
+    entry: './src/berillium.js',
     output: {
         filename: './js/berillium.js',
         path: path.resolve(__dirname, 'main'),
