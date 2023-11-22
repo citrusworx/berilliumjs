@@ -20,7 +20,7 @@ class RouterAjax {
         this.xhr.onload= () => {
         if(this.xhr.status >= 200 && this.xhr.status < 300){
         // Define Success 200 
-            
+        // history.pushState(); //<-- FIGURE THIS API OUT
         }
         else if(this.xhr.status >= 300 && this.xhr.status < 400){
         // Define Redirect 300
