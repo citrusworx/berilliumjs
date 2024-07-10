@@ -19,16 +19,6 @@
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./global/global.js":
-/*!**************************!*\
-  !*** ./global/global.js ***!
-  \**************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("function _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\nfunction _toPropertyKey(arg) { var key = _toPrimitive(arg, \"string\"); return _typeof(key) === \"symbol\" ? key : String(key); }\nfunction _toPrimitive(input, hint) { if (_typeof(input) !== \"object\" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || \"default\"); if (_typeof(res) !== \"object\") return res; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (hint === \"string\" ? String : Number)(input); }\nvar define = function define(name, moduleName, content) {\n  __webpack_require__.g[moduleName] = _defineProperty({}, name, content);\n};\n\n// | All other code goes below here   | \n// | Happy coding!                    |\n// v                                  v\n\n// export here :D\nmodule.exports = {\n  define: define\n};\n\n//# sourceURL=webpack://berillium/./global/global.js?");
-
-/***/ }),
-
 /***/ "./global/statemate.js":
 /*!*****************************!*\
   !*** ./global/statemate.js ***!
@@ -57,7 +47,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction HomeController() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", null, \"Home\"));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomeController);\n\n//# sourceURL=webpack://berillium/./spa/controllers/home-controller.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var F_Dev_berilliumjs_spa_views_components_navbar_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spa/views/components/navbar.jsx */ \"./spa/views/components/navbar.jsx\");\n/* harmony import */ var F_Dev_berilliumjs_spa_views_components_hero_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./spa/views/components/hero.jsx */ \"./spa/views/components/hero.jsx\");\n\n\n\nfunction HomeController() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(F_Dev_berilliumjs_spa_views_components_navbar_jsx__WEBPACK_IMPORTED_MODULE_1__.NavbarDark, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(F_Dev_berilliumjs_spa_views_components_hero_jsx__WEBPACK_IMPORTED_MODULE_2__.Hero, null));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomeController);\n\n//# sourceURL=webpack://berillium/./spa/controllers/home-controller.js?");
 
 /***/ }),
 
@@ -72,25 +62,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./spa/views/navbar.jsx":
-/*!******************************!*\
-  !*** ./spa/views/navbar.jsx ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./spa/views/components/hero.jsx":
+/*!***************************************!*\
+  !*** ./spa/views/components/hero.jsx ***!
+  \***************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Navbar() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, \"Navbar\");\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);\n\n//# sourceURL=webpack://berillium/./spa/views/navbar.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* module decorator */ module = __webpack_require__.hmd(module);\n\nfunction Hero() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"section\", {\n    className: \"hero:primary\"\n  }, \"Hero\");\n}\nfunction HeroSecondary(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"section\", {\n    className: \"hero:secondary\"\n  }, \"Hero\");\n}\nfunction HeroDark(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"section\", {\n    className: \"hero:dark\"\n  }, \"Hero\");\n}\nfunction HeroLight(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"section\", {\n    className: \"hero:light\"\n  }, \"Hero\");\n}\nmodule.exports = {\n  Hero: Hero,\n  HeroSecondary: HeroSecondary,\n  HeroDark: HeroDark,\n  HeroLight: HeroLight\n};\n\n//# sourceURL=webpack://berillium/./spa/views/components/hero.jsx?");
 
 /***/ }),
 
-/***/ "./spa/views/view.jsx":
-/*!****************************!*\
-  !*** ./spa/views/view.jsx ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./spa/views/components/navbar.jsx":
+/*!*****************************************!*\
+  !*** ./spa/views/components/navbar.jsx ***!
+  \*****************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction HeroBox() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", null, \"Hero Box\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n    href: \"/about\",\n    \"data-loader\": true\n  }, \"Click Here\"));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeroBox);\n\n//# sourceURL=webpack://berillium/./spa/views/view.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* module decorator */ module = __webpack_require__.hmd(module);\n\nfunction Navbar(props) {\n  return (\n    /*#__PURE__*/\n    // Create a variation of a navbar\n    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"nav\", {\n      className: \"navbar:primary\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n      className: props.navList\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"#\"\n    }, \"Links\"))))\n  );\n}\nfunction NavbarDark(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"nav\", {\n    className: \"h-8 w:min:full bg:black-800\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n    className: props.navlist\n  }));\n}\nfunction NavbarLight(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"nav\", {\n    className: \"h-8 w:min:full bg:gray-200\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n    className: props.navList\n  }));\n}\nfunction NavbarSecondary(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"nav\", {\n    \"class\": \"h-8 w:min:full bg:secondary\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n    className: props.navList\n  }));\n}\nmodule.exports = {\n  Navbar: Navbar,\n  NavbarDark: NavbarDark,\n  NavbarLight: NavbarLight,\n  NavbarSecondary: NavbarSecondary\n};\n\n//# sourceURL=webpack://berillium/./spa/views/components/navbar.jsx?");
 
 /***/ }),
 
@@ -101,7 +91,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _spa_views_view_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../spa/views/view.jsx */ \"./spa/views/view.jsx\");\n/* harmony import */ var _spa_views_navbar_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../spa/views/navbar.jsx */ \"./spa/views/navbar.jsx\");\n/* harmony import */ var _global_global_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../global/global.js */ \"./global/global.js\");\n/* harmony import */ var _global_global_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_global_global_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _global_statemate_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../global/statemate.js */ \"./global/statemate.js\");\n/* harmony import */ var _global_statemate_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_global_statemate_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _spa_router_router_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../spa/router/router.js */ \"./spa/router/router.js\");\n/* harmony import */ var _spa_controllers_home_controller_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../spa/controllers/home-controller.js */ \"./spa/controllers/home-controller.js\");\n/* harmony import */ var _spa_controllers_about_controller_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../spa/controllers/about-controller.js */ \"./spa/controllers/about-controller.js\");\n\n\n\n\n\n\n\n\n\nvar router = new _spa_router_router_js__WEBPACK_IMPORTED_MODULE_6__.Router();\nconsole.log(router.viewRoutes());\nconsole.log(router.viewControllers());\nrouter.addController('/', _spa_controllers_home_controller_js__WEBPACK_IMPORTED_MODULE_7__[\"default\"]);\nrouter.addRoute('about', '/about');\nrouter.addController('/about', _spa_controllers_about_controller_js__WEBPACK_IMPORTED_MODULE_8__[\"default\"]);\nrouter.init();\n\n//# sourceURL=webpack://berillium/./src/berillium.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _global_statemate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../global/statemate.js */ \"./global/statemate.js\");\n/* harmony import */ var _global_statemate_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_global_statemate_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _spa_router_router_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../spa/router/router.js */ \"./spa/router/router.js\");\n/* harmony import */ var _spa_controllers_home_controller_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../spa/controllers/home-controller.js */ \"./spa/controllers/home-controller.js\");\n/* harmony import */ var _spa_controllers_about_controller_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../spa/controllers/about-controller.js */ \"./spa/controllers/about-controller.js\");\n\n\n\n\nvar router = new _spa_router_router_js__WEBPACK_IMPORTED_MODULE_1__.Router();\nconsole.log(router.viewRoutes());\nconsole.log(router.viewControllers());\nrouter.addController('/', _spa_controllers_home_controller_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nrouter.addRoute('about', '/about');\nrouter.addController('/about', _spa_controllers_about_controller_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nrouter.init();\n\n//# sourceURL=webpack://berillium/./src/berillium.js?");
 
 /***/ }),
 
@@ -236,16 +226,19 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
+/******/ 	/* webpack/runtime/harmony module decorator */
 /******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
+/******/ 		__webpack_require__.hmd = (module) => {
+/******/ 			module = Object.create(module);
+/******/ 			if (!module.children) module.children = [];
+/******/ 			Object.defineProperty(module, 'exports', {
+/******/ 				enumerable: true,
+/******/ 				set: () => {
+/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
+/******/ 				}
+/******/ 			});
+/******/ 			return module;
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

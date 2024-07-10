@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>berilliumjs | Vanillajs Library</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theberylcompany/BerilliumCSS@main/css/berillium.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/citrusworx/berilliumcss@main/css/berillium.css" />
 </head>
 <body>
     <main id="app">
+        <navbar-dark>
+            <ul slot='links' class="list:none caveat">
+                <li>Home</li>
+            </ul>            
+        </navbar-dark>
+        <nav class="h:5 w:full bg:black:200">
+                <ul class="list:none">
+                    <li>Home</li>
+                </ul>
+        </nav>
         <h2 class="text:color:primary">Testing the Scripts in the Console atm...</h2>        
         <noscript>Please enable javascript in your browser</noscript>
     </main>
     <script src="berillium.js"></script>
+    <script src="/sugar/sugar.js"></script>
 </body>
 </html>
