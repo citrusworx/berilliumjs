@@ -1,0 +1,8 @@
+.homebar {
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    bottom: -0.5;
+    background-color: purple;
+    overflow: hidden;
+}
