@@ -1,6 +1,6 @@
 # berilliumjs
 
-A powerful, vanilla JavaScript library that utilizes both Vanillajs and Nodejs based applications.
+A powerful, innovative JavaScript library that utilizes both Vanillajs and Nodejs based applications.
 
 ## Building a Universal, A'la Carte Web Library
 
