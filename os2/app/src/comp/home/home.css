@@ -6,3 +6,12 @@
     background-color: purple;
     overflow: hidden;
 }
+
+.home-button {
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    background-color: plum;
+    margin-left: 5px;
+    margin-top: 4px;
+}

@@ -7,7 +7,9 @@ function Home() {
         id="homebar"
         aria-label="Homebar"
     >
-        Homebar
+        <div role="button" aria-label="button" id="home-button" className="home-button">
+        
+        </div>
     </section>
   )
 }

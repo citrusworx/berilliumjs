@@ -1,21 +1,69 @@
 .desktop {
     overflow: hidden;
-    width: 100%;
     height: 95vh;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .bg\:grad\:lime {
     background: linear-gradient(90deg, hsl(90, 50%, 80%), hsl(90, 50%, 50%));
 }
 
+.bg\:grad\:blue{
+    background: linear-gradient(90deg, hsl(250, 93%, 47%), hsl(230, 80%, 90%));
+}
+
 .bg\:img\:purple-cubes {
-    background-image: url('./img/01.png');
+    background-image: url('./img/background/01.png');
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.icon-box:hover {
+    background: linear-gradient(90deg, hsl(90, 50%, 100%), hsl(90, 50%, 70%));
+    cursor: pointer;
+}
+
+
+.title {
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    height: 18px;
+    width: 60px;
+    position: absolute;
+    top: 40px;
+    z-index:1
 }
 
 .bg\:img\:blue-cubes {
-    background-image: url('./img/02.png');
+    background-image: url('./img/background/02.png');
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
+}
+
+.home-icon {
+    -webkit-mask-image: url('./img/icon/svg/house-solid.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url('./img/icon/svg/house-solid.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    height: 36px !important;
+    width: 36px !important;
+    display:inline-block;
+    margin-top: 5px;
 }
