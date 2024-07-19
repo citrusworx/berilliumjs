@@ -1,0 +1,37 @@
+#resizeable-window {
+    height: 800px;
+    width: 600px;
+}
+
+#window-bar{
+    height: 4px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+#minimize-button {
+    background-color: yellow;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+}
+
+#close-button {
+    background-color: red;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+}
+
+#fullscreen-button {
+    background-color: green;
+    height: 4px;
+    width: 4px;
+    border-radius: 4px;
+}
+
+#file-bar {
+    height: 4px;
+    width: 100%;
+    background-color: gray;
+}

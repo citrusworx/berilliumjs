@@ -1,4 +1,4 @@
-.homebar {
+.homebar.default {
     height: 5vh;
     width: 100%;
     position: relative;
@@ -7,11 +7,75 @@
     overflow: hidden;
 }
 
-.home-button {
+.homebar.orange {
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    bottom: -0.5;
+    background-color: orangered;
+    overflow: hidden;
+}
+
+.homebar.blue {
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    bottom: -0.5;
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+
+.homebar.lime {
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    bottom: -0.5;
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+
+/* 
+
+    HOME BUTTON
+
+*/
+
+.home-button.default {
     border-radius: 25px;
     height: 40px;
     width: 40px;
     background-color: plum;
     margin-left: 5px;
     margin-top: 4px;
+    
+}
+
+.home-button.blue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.home-button.blue:hover {
+    background-color: lightblue;
+}
+
+.home\:icon.white {
+    -webkit-mask-image: url('../desktop/img/icon/svg/house-solid.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url('../desktop/img/icon/svg/house-solid.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    height: 24px !important;
+    width: 24px !important;
+    display:inline-block;
+    margin-top: 8px;
+    background-color: white;
 }

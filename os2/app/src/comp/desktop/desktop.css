@@ -19,6 +19,60 @@
     background-repeat: no-repeat;
 }
 
+.bg\:img\:blue-cubes {
+    background-image: url('./img/background/02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg\:img\:lime-cubes {
+    background-image: url('./img/background/03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg\:img\:orange-cubes {
+    background-image: url('./img/background/04.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg\:img\:gray-cubes {
+    background-image: url('./img/background/05.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg\:img\:pink-cubes {
+    background-image: url('./img/background/06.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg\:img\:slate-cubes {
+    background-image: url('./img/background/07.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg\:img\:purple-cubes-2 {
+    background-image: url('./img/background/08.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg\:img\:orange-cubes-2 {
+    background-image: url('./img/background/09.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg\:img\:teal-cubes {
+    background-image: url('./img/background/10.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .icon-box {
     display: flex;
     flex-direction: column;
@@ -47,12 +101,6 @@
     position: absolute;
     top: 40px;
     z-index:1
-}
-
-.bg\:img\:blue-cubes {
-    background-image: url('./img/background/02.png');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .home-icon {
